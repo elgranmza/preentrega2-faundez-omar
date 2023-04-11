@@ -1,0 +1,28 @@
+Comenzaré la corrección por explicar nuevamente la estructura básica de un html para que la comprendas y puedas visualizar los errores que contiene la tuya: 
+
+
+
+Estructura html, es la misma para todos y hay que respetarlo porque si no vas a tener muchísimos problemas a futuro con css. Todo html se compone (en orden de aparición) por un head y un body. Dentro del body vas a tener un header con un nav, un main y un footer. Si revisas tus archivos ninguno la cumple. Después de la etiqueta head abrís el body, luego header con nav y ul, luego el main donde va el contenido y por ultimo el footer. Recién ahí se cierra el body y por último la etiqueta html. Por fuera del body no podes tener ninguna etiqueta de contenido, solo estará head a su misma altura y html que la etiqueta padre de todo html. En tu caso el nav termina donde termina la ul, si queres el logo en el nav colocalo antes. Lo que es banner ya es contenido por ende va dentro de una etiqueta main y por dentro también los sections. El footer es parte de tu body, en tu caso lo tenes por fuera. 
+
+
+Algo muy importante respetar la identación del código, que es el orden porque si no se hace difícil leerlo. En cada html hace click en el botón derecho y selecciona la opción dar formato al texto para que se acomode solo, yo de hecho lo hago cada vez que termino de codear automáticamente. Esto también funciona en css.
+
+
+En el head revisa la tercera etiqueta meta y colocala correctamente, es     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+Todas las rutas de enlaces que uses necesariamente deberán comenzar con ./ aún cuando sean archivos que estén sueltos o estén dentro de la misma carpeta. ¿Por qué? Bueno porque las rutas que usas son absolutas, esto significa que vos abriendo tu página con el live server podes navegar pero si lo subís a un servidor o Github que es lo que se pide en la entrega siguiente no va a funcionar ningún enlace. Entonces por ejemplo las rutas del nav que tengas como contacto.html será ./contacto.html idem con pages, será ./pages/contacto.html y lo mismo con los links de imágenes o ruteo de css. 
+
+
+Recorda que los nombres de las clases no pueden comenzar con mayúscula como es el caso de Piedepagina, modifica la P por p.
+
+
+Las etiquetas h van del 1 al 6 por su jerarquía, es decir de mayor a menor relevancia. La h1 se reserva para el título principal de cada html y se utiliza una sola vez en cada uno, deberías incorporar una en los que no tengas, preferible hacerlo ahora que en la 3er pre entrega por cuestiones de SEO. Fijate que por ej en index la usas para una descripción y eso sería más una etiqueta p.
+
+
+Los colores como red reemplazalos por su equivalente en hexadecimal # o en rgb, es la manera más precisa de definir colores.
+
+
+Ojo con las medidas del banner, cuando quieras pasarlo a responsive no vas a poder porque una imagen de 1300px de ancho no entraría en un celular de 320px. Usa medidas relativas o probalo como background en lugar de imagen. 
+
+
