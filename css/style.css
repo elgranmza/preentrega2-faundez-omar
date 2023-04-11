@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+.menu{
+    font-family: 'Roboto Condensed', sans-serif;
+    text-align: right;
+    text-transform: uppercase;
+}
+
+#inicio_1{
+    color:red;
+
+}
+#galeria_1{
+    color: red;
+}
+#productos_1{
+    color: red;
+
+}
+#quien_soy_1{
+    color: red;
+}
+#contactoyturnos_1{
+    color: red;
+}
+/* body sacado de tik tok*/
+body{
+    background: #333333;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top, #dd1818, #333333);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top, #dd1818, #333333); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+/*ACA EMPIEZA LA SECCION DE BANNER DEL INICIO*/
+.banner{
+    background-image: url(../img/equipo_matias.jpeg);
+    width: 1300px;
+    height: 800px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+.img_presentacion{
+    display:flex;
+}
+.descripcion_inicial{
+    text-align: center;
+}
+.video_presentacion{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#galeria_img_2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.galeria_img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Piedepagina{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logos_contac{
+    display: flex;
+    justify-items: center;
+    align-items: center;
+}
+.contactanos{
+    display: flex;
+    justify-items: center;
+    align-items: center;
+}
+.turnos{
+    display: grid;
+    place-items: center;
+}
+.agendar{
+    display: grid;
+    place-items: center;
+}
+.ubicacion_local{
+    display: grid;
+    place-items: center;
+}

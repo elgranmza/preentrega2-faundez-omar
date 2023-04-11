@@ -1,0 +1,10 @@
+idea sobre una barberia que funciona en san ignacio (familiar)
+
+nombre  BARBERIA BILLORDO
+
+contenido
+INDEX
+QUIEN SOY
+GALERIA
+PRODUCTOS
+CONTACTO Y TURNO
