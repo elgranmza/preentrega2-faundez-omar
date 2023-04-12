@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
     list-style: none;
     text-decoration: none;
     border: none;
@@ -11,6 +12,7 @@
     font-family: 'Roboto Condensed', sans-serif;
     text-align: right;
     text-transform: uppercase;
+    gap: 20px;
 }
 
 #inicio_1{
@@ -36,6 +38,12 @@ body{
     background: -webkit-linear-gradient(to top, #dd1818, #333333);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to top, #dd1818, #333333); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
+.contenedor-inicio{
+    width: 1300px;
+    height: 300px;
+    display: flex;
+
+}
 /*ACA EMPIEZA LA SECCION DE BANNER DEL INICIO*/
 .banner{
     background-image: url(../img/equipo_matias.jpeg);
@@ -44,6 +52,11 @@ body{
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
+}
+.img-pre{
+    width: 1300px;
+    height: 800px;
+    margin: 100px;
 }
 .img_presentacion{
     display:flex;
