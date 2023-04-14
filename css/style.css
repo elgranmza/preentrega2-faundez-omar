@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -8,30 +8,46 @@
     outline: none;
     font-family: 'Roboto Condensed', sans-serif;
 }
-header{
+a:visited{
+    color: whitesmoke;
+}
+.banner:hover{
+    transform: scale(1.04);
+    transition: transform .3s;
+}
+.img-pre:hover{
+    transform: scale(0.80);
+    transition: transform .3s;
+}
+
+header {
     height: 300px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+
 }
-.logo{
+
+.logo {
     background-repeat: no-repeat;
     margin-left: 50px;
     border-radius: 20px;
     margin-top: 20px;
 }
-header nav{
+
+header nav {
     display: flex;
     justify-content: right;
     margin-right: 50px;
     margin-top: 20px;
 }
-header nav ul{
+
+header nav ul {
     list-style: none;
     display: flex;
     gap: 15px;
 }
 
-.menu{
+.menu {
     font-family: 'Roboto Condensed', sans-serif;
     text-align: right;
     text-transform: uppercase;
@@ -41,104 +57,167 @@ header nav ul{
 
 }
 
-#inicio_1{
-    color:rgb(255, 0, 0);
+#inicio_1 {
+    color: rgb(255, 0, 0);
 
 }
-#galeria_1{
-    color:rgb(255, 0, 0);;
+
+#galeria_1 {
+    color: rgb(255, 0, 0);
+    ;
 }
-#productos_1{
-    color:rgb(255, 0, 0);;
+
+#productos_1 {
+    color: rgb(255, 0, 0);
+    ;
 
 }
-#quien_soy_1{
-    color:rgb(255, 0, 0);;
+
+#quien_soy_1 {
+    color: rgb(255, 0, 0);
+    ;
 }
-#contactoyturnos_1{
-    color:rgb(255, 0, 0);;
+
+#contactoyturnos_1 {
+    color: rgb(255, 0, 0);
+    ;
 }
+
 /* body sacado de tik tok*/
-body{
-    background: #333333;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to top, #dd1818, #333333);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to top, #dd1818, #333333); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+body {
+    display: flex;
+    flex-direction: column;
+    background: #333333;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top, #dd1818, #333333);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top, #dd1818, #333333);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
+
 /*ACA EMPIEZA LA SECCION DE BANNER DEL INICIO*/
-.banner{
-    background-image: url(../img/equipo_matias.jpeg);
-    width: 1300px;
-    height: 700px;
+
+main div img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+main {
+    height: 70vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    margin: 1rem 3rem 3rem 3rem;
+}
+
+.contenedor {
+    height: 350vh;
+}
+
+.banner {
     display: flex;
+    object-fit: cover;
+    background-repeat: no-repeat;
+}
+
+.img-pre {
     background-repeat: no-repeat;
     background-size: contain;
-    background-position: center;
-    justify-content: center;
-    align-items: center;
 }
-.img-pre{
-    background-image: url(../img/matias.jpeg);
-    width: 500px;
-    height: 500px;
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: left;
-    justify-content: left;
-    margin-top: 40px;
-    margin-left: 40px;
-}
-main nav{
+
+.img_presentacion {
     display: flex;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
-.img_presentacion{
-    display:flex;
-}
-.descripcion-inicial{
+
+.descripcion-inicial {
     text-align: center;
-    width: 400px;
-    height: 500px;
     align-items: center;
-    margin-top: 250px;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
-.video_presentacion{
+
+/** MEDIA QUARIS DE TABLET**/
+
+@media screen and (min-width:600px) {
+
+    /**estilos del main**/
+    main {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 50%);
+    }
+
+    .banner {
+        grid-column: span 2;
+
+    }
+}
+
+/* MQ PANTALLA GRANDE*/
+@media screen and (min-width:1024x) {
+    main {
+        display: block;
+        grid-template-rows: repeat(2, 30%);
+    }
+
+    .img-pre {
+        grid-row: span 1;
+        grid-column: span 1;
+    }
+}
+
+.video_presentacion {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-#galeria_img_2{
+
+#galeria_img_2 {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.galeria_img{
+
+.galeria_img {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.piedepagina{
+
+.piedepagina {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.logos_contac{
+
+.logos_contac {
     display: flex;
     justify-items: center;
     align-items: center;
 }
-.contactanos{
+
+.contactanos {
     display: flex;
     justify-items: center;
     align-items: center;
 }
-.turnos{
+
+.turnos {
     display: grid;
     place-items: center;
 }
-.agendar{
+
+.agendar {
     display: grid;
     place-items: center;
 }
-.ubicacion_local{
+
+.ubicacion_local {
     display: grid;
     place-items: center;
 }
