@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- link boostrap-->
+
     <link rel="stylesheet" href="../css/style.css">
     <title>BARBERIA BILLORDO</title>
     <!-- google font-->
@@ -17,44 +19,57 @@
 <body>
     <header>
         <div class="logo">
-            <img src="../img/logo.jpg" alt="logo">
+            <img src="../img/logo.png" alt="logo">
         </div>
         <nav>
+            <!-- utilizacion consigna de bootstrap-->
             <div class="menu">
-                <ul>
-                    <li>
-                        <a href="../index.html" class="inicio">inicio</a>
+                <ul class="nav justify-content-end">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="../index.html">inicio</a>
                     </li>
-                    <li>
-                        <a href="./quien_soy.html" id="quien_soy_1">Quien soy</a>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./quien_soy.html">quien soy</a>
                     </li>
-                    <li>
-                        <a href="./galeria.html" class="galeria">galeria</a>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./productos.html">productos</a>
                     </li>
-                    <li>
-                        <a href="./productos.html" class="productos"> productos</a>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./galeria.html">galeria</a>
                     </li>
-                    <li>
-                        <a href="./contactoyturnos.html" class="contactoyturnos">Contacto Y Turnos</a>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./contactoyturnos.html">Contactos y Turnos</a>
                     </li>
                 </ul>
             </div>
-            <div class="img_quien_soy">
-                <img src="../img/equipomatias2.jpeg">
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt illo asperiores eaque tempore
-                    tenetur dolorem, quos facere quae eum ullam blanditiis molestiae praesentium suscipit. Esse
-                    voluptate exercitationem fugit. Explicabo, quibusdam!</p>
-            </div>
-            <div class="insta_part">
-                <img src="../img/logo insta.png">TE INVITO A VER MI INSTAGRAM</a>
-            </div>
         </nav>
     </header>
+    <main class="contenedor-1">
+        <div>
+            <img src="../img/equipomatias2.jpeg" class="img-fluid" alt="matias trabajando">
+        </div>
+        <div>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt illo asperiores eaque tempore
+                tenetur dolorem, quos facere quae eum ullam blanditiis molestiae praesentium suscipit. Esse
+                voluptate exercitationem fugit. Explicabo, quibusdam!</p>
+        </div>
+        <section class="redes">
+        <div class="titulo-redes">
+            <p>TE INVITO A CONOCER MI INSTAGRAM</p>
+        </div>
+            <div class="logo-insta">
+                <img src="../img/logo insta.png" alt="logo instagram">
+            </div>
+        </section>
+    </main>
     <footer>
         <div class="piedepagina">
             <p>TODOS LOS DERECHOS RESERVADOS</p>
         </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>

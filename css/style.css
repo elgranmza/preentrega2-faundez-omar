@@ -124,6 +124,7 @@ main {
 .img-pre {
     background-repeat: no-repeat;
     background-size: contain;
+
 }
 
 .img_presentacion {
@@ -144,30 +145,64 @@ main {
 
 /** MEDIA QUARIS DE TABLET**/
 
-@media screen and (min-width:600px) {
+@media screen and (max-width:600px) {
 
     /**estilos del main**/
-    main {
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(2, 50%);
-    }
 
-    .banner {
-        grid-column: span 2;
-
-    }
+header {
+    display: flex;
+    align-content: center;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 20px;
+}
+.logo{
+    display: none;
 }
 
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+.menu {
+    font-family: 'Roboto Condensed', sans-serif;
+    text-align: right;
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: column;
+}
+.descripcion-inicial{
+    text-align: center;
+}
+}
 /* MQ PANTALLA GRANDE*/
-@media screen and (min-width:1024x) {
+@media screen and (min-width:1024px) {
     main {
-        display: block;
-        grid-template-rows: repeat(2, 30%);
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 50% 50%;
+    }
+    .banner{
+        grid-column: span 2 ;
     }
 
     .img-pre {
-        grid-row: span 1;
-        grid-column: span 1;
+        background-repeat: no-repeat;
+        background-size: contain;
+        display: flex;
+        width: 700px;
+        height: 1024px;
+    }
+    .descripcion-inicial {
+        text-align: center;
+        align-items: center;
+        object-fit: cover;
+        width: 700px;
+        height: 1024px;
+    }
+    .contenedor {
+        height: 300vh;
     }
 }
 
@@ -221,3 +256,53 @@ main {
     display: grid;
     place-items: center;
 }
+/* PAGE QUIEN SOY*/
+.contenedor-1 {
+    height: 150vh;
+    grid-template-rows: span 2;
+}
+/* MQ escritorio*/
+@media screen and (min-width:1024px) {
+.redes{
+    grid-template-rows: span 2;
+    display: flex;
+}
+
+.logo-insta{
+    height: 100px;
+    width: 100px;
+}
+.titulo-redes {
+    align-items: center;
+    align-content: center;
+}
+}
+/* MQ tablet*/
+@media screen and (min-width:576px) {
+    .logo-insta{
+        height: 100px;
+        width: 100px;
+    }
+
+}
+/* PAGE QUIEN SOY*/
+@media screen and (min-width:1024px) {
+    .tienda-online{
+        text-align: center;
+        grid-column: span 2 ;
+
+    }
+}
+/* MQ tablet*/
+@media screen and (min-width:576px) {
+    .tienda-online{
+    height: 300px;
+    width: 300px;
+}
+}
+.contactanos{
+    display: flex;
+    margin-left: 20px;
+}
+
+
