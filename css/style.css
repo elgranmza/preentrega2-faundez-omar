@@ -231,15 +231,21 @@ header nav ul {
 }
 
 .logos_contac {
-    display: flex;
-    justify-items: center;
-    align-items: center;
+    height: 150vh;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 50% 50%;
+}
+.ubicacion_local{
+    height: 50vh;
+    grid-template-rows: span 2;
 }
 
 .contactanos {
     display: flex;
     justify-items: center;
     align-items: center;
+    margin-left: 200px;
+    margin-bottom: 10%;
 }
 
 .turnos {
@@ -260,6 +266,12 @@ header nav ul {
 .contenedor-1 {
     height: 150vh;
     grid-template-rows: span 2;
+}
+.texto-contacto{
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    margin-top: 20%;
 }
 /* MQ escritorio*/
 @media screen and (min-width:1024px) {
@@ -305,4 +317,18 @@ header nav ul {
     margin-left: 20px;
 }
 
+/* MQ tablet pestaña contacto*/
+@media screen and (min-width:768px) {
+    .ubicacion-local{
+        max-width: 300px;
+        max-height: 500px;
+        margin-left: 150px;
+    }
+    .turnos{
+        max-width: 300px;
+        max-height: 500px;
+        margin-left: 150px;
+    }
+
+}
 
